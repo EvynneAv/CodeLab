@@ -15,6 +15,7 @@ import com.example.androidlab.recycleViewExample.RecycleView;
 
 public class MainActivity extends AppCompatActivity {
     private Button buttonMenuRv;
+    private Button buttonMenuService;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +27,9 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
         buttonMenuRv = findViewById(R.id.btn_rvMenu);
+        buttonMenuService = findViewById(R.id.btn_serviceMenu);
 
+//      Botões
 
         buttonMenuRv.setOnClickListener(new View.OnClickListener() {
             @Override
