@@ -12,6 +12,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.androidlab.recycleViewExample.RecycleView;
+import com.example.androidlab.serviceExample.ServiceExampleActivity;
 
 public class MainActivity extends AppCompatActivity {
     private Button buttonMenuRv;
@@ -35,6 +36,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent  intent = new Intent(getApplicationContext(), RecycleView.class);
+                startActivity(intent);
+            }
+        });
+        buttonMenuService.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ServiceExampleActivity.class);
                 startActivity(intent);
             }
         });
