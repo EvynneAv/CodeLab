@@ -21,8 +21,8 @@ public class MusicInBackgroundService extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
 //        Usando o toque padrão do celular
-//        mediaPlayer = MediaPlayer.create(this, Settings.System.DEFAULT_RINGTONE_URI);
-        mediaPlayer = MediaPlayer.create(this, R.raw.opato);
+        mediaPlayer = MediaPlayer.create(this, Settings.System.DEFAULT_RINGTONE_URI);
+//        mediaPlayer = MediaPlayer.create(this, R.raw.opato);
         mediaPlayer.setLooping(true);
         mediaPlayer.start();
         return START_STICKY;
